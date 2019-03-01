@@ -18,23 +18,23 @@ This plugin is meant to work with Cordova 3.5.0+.
 
 2. Install this plugin using PhoneGap/Cordova cli:
 
-        cordova plugin add https://github.com/wnyc/cordova-plugin-wakeuptimer.git
+        cordova plugin add https://github.com/Morsekode/cordova-plugin-wakeuptimer.git
 
 ## Usage
 
     // all responses from the audio player are channeled through successCallback and errorCallback
 
     // set wakeup timer
-    window.wakeuptimer.wakeup( successCallback,  
-       errorCallback, 
+    window.wakeuptimer.wakeup( successCallback,
+       errorCallback,
        // a list of alarms to set
        {
             alarms : [{
                 type : 'onetime',
                 time : { hour : 14, minute : 30 },
-                extra : { message : 'json containing app-specific information to be posted when alarm triggers' }, 
+                extra : { message : 'json containing app-specific information to be posted when alarm triggers' },
                 message : 'Alarm has expired!'
-           }] 
+           }]
        }
     );
 
@@ -44,7 +44,7 @@ This plugin is meant to work with Cordova 3.5.0+.
         {
             alarms : [{
                 type : 'snooze',
-                time : { seconds : 60 }, // snooze for 60 seconds 
+                time : { seconds : 60 }, // snooze for 60 seconds
                 extra : { }, // json containing app-specific information to be posted when alarm triggers
                 message : this.get('message'),
                 sound : this.get('sound'),
@@ -62,4 +62,4 @@ This plugin is meant to work with Cordova 3.5.0+.
         } else {
             console.log('wakeup unhandled type (' + result.type + ')');
         }
-    }; 
+    };
