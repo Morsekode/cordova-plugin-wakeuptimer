@@ -1,0 +1,42 @@
+{
+  "name": "cordova-plugin-wakeup",
+  "version": "5.0.2",
+  "description": "Cordova wake Plugin",
+ 
+  "cordova": {
+    "id": "cordova-plugin-wakeup",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morsekode/cordova-plugin-wakeuptimer.git"
+  },
+ 
+  "keywords": [
+    "cordova",
+  ],
+  "scripts": {
+    
+  },
+  "author": "https://github.com/wnyc/cordova-plugin-wakeuptimer",
+  "license": "Apache-2.0",
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova-android": ">=6.1.0"
+      },
+      "4.0.0": {
+        "cordova-android": ">=6.3.0"
+      },
+      "6.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  }
+}
